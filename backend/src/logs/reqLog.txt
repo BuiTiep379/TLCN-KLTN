@@ -22971,3 +22971,14 @@
 20221005	20:17:28	8dd656c0-af36-4d60-b0c6-eed6f4484da3	OPTIONS	http://localhost:3001	/api/admin/get-users
 20221005	20:17:28	29c14833-bd9b-4b15-af18-0cc63450a292	GET	http://localhost:3001	/api/admin/get-users
 20221005	20:17:41	7f3d5239-8dad-449a-9ef7-bb6a73a7e6c1	POST	undefined	/api/color/add-color
+20221005	20:38:42	1960bf38-94ac-4ddf-9421-7610060d2744	OPTIONS	http://localhost:3001	/api/category
+20221005	20:38:42	b55757a7-6db6-47c9-944c-d850a574d1e0	GET	http://localhost:3001	/api/category
+20221005	21:23:39	c7c9e9e7-bcdb-47cc-8ba8-6334ed82db64	OPTIONS	http://localhost:3001	/api/admin/get-users
+20221005	21:23:39	57ad5bbb-1398-4a70-b2ca-5484669d2357	GET	http://localhost:3001	/api/admin/get-users
+20221005	21:23:39	9b5062ee-8c34-4aa3-94f1-a6c6f0ab2b12	OPTIONS	http://localhost:3001	/api/admin/refresh-token
+20221005	21:23:39	115b0bae-662b-40c9-9307-b07c026ec162	POST	http://localhost:3001	/api/admin/refresh-token
+20221005	21:23:40	6ed24b40-9be2-4f05-a77f-d08944fe23b8	GET	http://localhost:3001	/api/admin/get-users
+20221005	21:25:10	c60518b1-31a0-4b37-b868-10d621729aef	OPTIONS	http://localhost:3001	/api/admin/create-user
+20221005	21:25:10	bcbd5bcf-c6e4-423f-bbb0-ce6d2f4e2cb7	POST	http://localhost:3001	/api/admin/create-user
+20221005	21:25:14	981562c2-4637-4ffa-8712-3edd0e5a70c4	OPTIONS	http://localhost:3001	/api/admin/get-users
+20221005	21:25:14	e64e885a-b7c2-4fd1-a52d-6358b241fb2b	GET	http://localhost:3001	/api/admin/get-users
