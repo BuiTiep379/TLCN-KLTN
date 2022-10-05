@@ -1,12 +1,12 @@
-import { Modal, Form, Button, Upload, Input, Spin, Row, Col, Radio } from 'antd';
+import { Modal, Form, Button, Upload, Input, Spin, Row, Col, Radio, Typography } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
 
-const AddUserModal = (props) => {
-  const { visible, onCancel, beforeUpload, form, onFinish, loading, handleCancel } = props;
-  const [value, setValue] = useState('admin');
+const EditUserModel = (props) => {
+  const { visible, onCancel, form, onFinish, loading, handleCancel } = props;
+  const { roles, createdAt } = form.getFieldValue();
+  const [value, setValue] = useState(roles);
   const onChange = ({ target: { value } }) => {
-    console.log('radio1 checked', value);
     setValue(value);
   };
   const options = [
@@ -109,57 +109,17 @@ const AddUserModal = (props) => {
           <Form.Item className="username" label="Quyền" name="roles" style={{ fontWeight: '600' }} hasFeedback>
             <Radio.Group onChange={onChange} defaultValue="admin" options={options} optionType="button" />
           </Form.Item>
+          <Form.Item className="username" label="Ngày tạo" name="createdAt" style={{ fontWeight: '600' }} hasFeedback>
+            <Typography.Title level={5}>{new Date(createdAt).toLocaleDateString()}</Typography.Title>
+          </Form.Item>
           <Form.Item className="username" label="Avatar" style={{ fontWeight: '600' }} name="image">
-            <Upload accept=".png, .jpeg, .jpg" beforeUpload={beforeUpload}>
+            <Upload accept=".png, .jpeg, .jpg">
               <Button style={{ border: '1px solid #C0C0C0', borderRadius: '10px' }} icon={<UploadOutlined />}>
                 Click to Upload
               </Button>
             </Upload>
           </Form.Item>
 
-          <Form.Item
-            className="username"
-            label="Mật khẩu"
-            name="password"
-            style={{ fontWeight: '600' }}
-            rules={[
-              {
-                required: true,
-                message: 'Vui lòng nhập mật khẩu!',
-              },
-              {
-                min: 6,
-                message: 'Mật khẩu phải ít nhất 6 ký tự',
-              },
-            ]}
-            hasFeedback
-          >
-            <Input.Password style={{ border: '1px solid #C0C0C0', borderRadius: '10px' }} placeholder="Mật khẩu" />
-          </Form.Item>
-          <Form.Item
-            className="username"
-            label="Nhập lại mật khẩu"
-            name="confirmPassword"
-            style={{ fontWeight: '600' }}
-            dependencies={['password']}
-            rules={[
-              {
-                required: true,
-                message: 'Vui lòng nhập lại mật khẩu!',
-              },
-              ({ getFieldValue }) => ({
-                validator(rule, value) {
-                  if (!value || getFieldValue('password') === value) {
-                    return Promise.resolve();
-                  }
-                  return Promise.reject('Mật khẩu không khớp!');
-                },
-              }),
-            ]}
-            hasFeedback
-          >
-            <Input.Password style={{ border: '1px solid #C0C0C0', borderRadius: '10px' }} placeholder="Nhập lại mật khẩu" />
-          </Form.Item>
           <Form.Item
             style={{
               display: 'flex',
@@ -177,7 +137,7 @@ const AddUserModal = (props) => {
             }}
           >
             <Button htmlType="submit" style={{ border: '1px solid #C0C0C0', borderRadius: '10px', background: '#40E0D0', color: 'white', width: '30%', marginRight: '10px' }}>
-              Create
+              Edit
             </Button>
             <Button onClick={handleCancel} style={{ border: '1px solid #C0C0C0', borderRadius: '10px', background: '#FF6347', color: 'white', width: '30%' }}>
               Cancel
@@ -189,4 +149,4 @@ const AddUserModal = (props) => {
   );
 };
 
-export default AddUserModal;
+export default EditUserModel;

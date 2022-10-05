@@ -40,11 +40,11 @@ axiosClient.interceptors.response.use(
 
           return axiosClient(originalConfig);
         } catch (_error) {
+          TokenService.removeData();
           return Promise.reject(_error);
         }
       }
     }
-
     return Promise.reject(error);
   }
 );
