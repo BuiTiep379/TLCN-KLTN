@@ -22982,3 +22982,14 @@
 20221005	21:25:10	bcbd5bcf-c6e4-423f-bbb0-ce6d2f4e2cb7	POST	http://localhost:3001	/api/admin/create-user
 20221005	21:25:14	981562c2-4637-4ffa-8712-3edd0e5a70c4	OPTIONS	http://localhost:3001	/api/admin/get-users
 20221005	21:25:14	e64e885a-b7c2-4fd1-a52d-6358b241fb2b	GET	http://localhost:3001	/api/admin/get-users
+20221005	22:04:19	385db73a-48b5-45c2-b769-ab4c0dee5838	OPTIONS	http://localhost:3001	/api/category
+20221005	22:04:19	83880ebd-ecfe-442b-90d0-8ade3297a848	GET	http://localhost:3001	/api/category
+20221008	09:49:31	d3e43e1b-6386-4c39-adf6-b68a96b3b831	OPTIONS	http://localhost:3001	/api/admin/get-users
+20221008	09:49:31	ddd407b3-56cc-4e34-987b-06af599857ba	GET	http://localhost:3001	/api/admin/get-users
+20221008	09:49:31	32385908-f774-4909-bcb8-cd0b335711fc	POST	http://localhost:3001	/api/admin/refresh-token
+20221008	09:49:31	ea112ce5-d580-486c-b15d-3fc3331181d9	OPTIONS	http://localhost:3001	/api/admin/refresh-token
+20221008	09:49:32	2590f888-f128-4f0d-878a-f2d5c9ee8b4d	GET	http://localhost:3001	/api/admin/get-users
+20221008	09:49:44	f346ba43-da0f-4e5a-8c07-44665828eb5b	OPTIONS	http://localhost:3001	/api/category
+20221008	09:49:44	f20b0442-e877-4e1d-a2f8-4a412157c593	GET	http://localhost:3001	/api/category
+20221008	09:50:02	ad705487-9bd3-4aa5-8a3d-6093c12ffd0c	OPTIONS	http://localhost:3001	/api/admin/get-users
+20221008	09:50:02	283181f7-9ee3-4edd-8075-167fde2946c5	GET	http://localhost:3001	/api/admin/get-users
